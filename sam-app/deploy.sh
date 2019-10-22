@@ -2,7 +2,7 @@
 
 sam build
 sam package --output-template \
-    packaged.yaml --s3-bucket aishu-samtest
+    packaged.yaml --s3-bucket samtestaishu
 sam  deploy --template-file packaged.yaml \
-    --region ap-southeast-1 --capabilities \
+    --region us-east-1 --capabilities \
     CAPABILITY_IAM --stack-name samTesting

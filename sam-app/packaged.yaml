@@ -12,9 +12,10 @@ Resources:
   SamTestingFunction:
     Type: AWS::Serverless::Function
     Properties:
-      CodeUri: s3://aishu-samtest/736f535bf0d0fcece983adab9ab93a4d
+      CodeUri: s3://samtestaishu/c910e97049bb21f25cf43254faa83b79
       Handler: app.lambda_handler
       Runtime: python3.6
+      MemorySize: 1024
       Events:
         SamTesting:
           Type: Api
